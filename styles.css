@@ -1,0 +1,26 @@
+html {
+  background-color: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.timeline {
+  width: 997px;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+  position: relative; /* for absolutely positioned child */
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background-color: #AED7F5;
+}
