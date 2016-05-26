@@ -4,7 +4,6 @@ html {
 
 body {
   padding: 0;
-  margin-top: 25px;
   box-sizing: border-box;
 }
 
@@ -17,7 +16,12 @@ h1 {
 h2 {
   font-size: 3em;
   font-weight: 300;
-  color: rgb(128, 192, 233);
+  color: black; /*rgb(128, 192, 233);*/
+}
+
+h3 {
+  font-weight: 600;
+  color: black;
 }
 
 h4 {
@@ -28,13 +32,13 @@ h4 {
 
 h6 {
   font-size: .9em;
-  font-weight: 300;
-  color: rgb(189, 209, 222);
+  font-weight: 400;
+  color: black; /*rgb(189, 209, 222);*/
 }
 
 h2,
 h6 {
-  font-family:  sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -43,13 +47,26 @@ a {
 
 
 .container {
+  margin-top: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: white;
+  margin: 0, auto;
+}
+
+.Box1 {
   width: 1020px;
-  font-family: 'Raleway', sans-serif;
+  height: auto;
 }
 
 .datetime {
-  width: 130px;
+  max-width: 130px;
+  height: 700px;
   display: inline-block;
+  text-align: right;
+  float: left;
+  background-color: lightgreen;
 }
 
 .datetime ul {
@@ -57,22 +74,24 @@ a {
 }
 
 .clock {
-  text-align: right;
+
 }
 
 .date {
-  text-align: right;
+
 }
 
 .vertline {
-  width: 997px;
+  max-width: 56px;
+  height:700px;
   padding: 0;
   list-style: none;
   margin: 0 auto;
+  background-color: pink;
   position: relative; /* for absolutely positioned child */
 }
 
-.vertline:before {
+/* .vertline:before {
   content: "";
   position: absolute;
   top: 0;
@@ -81,6 +100,11 @@ a {
   border: 8px;
   border-color: rgb(128, 192, 233);
   background-color: rgb(128, 192, 233);
+  margin: 0 auto;
+} */
+
+.main {
+  width: 100%;
 }
 
 .content {
@@ -88,4 +112,6 @@ a {
   height: auto;
   padding: 46px 38px 60px;
   background-color: rgb(128, 192, 233);
+  border-radius: 5px;
+  float: right;
 }
