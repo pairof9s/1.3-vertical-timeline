@@ -41,11 +41,10 @@ h6 {
   color: rgb(189, 209, 222);
 }
 
-
 a {
-  color: rgb(125, 192, 235);
+  color: inherit;
+  text-decoration: none;
 }
-
 
 .container {
   margin-top: 25px;
@@ -54,7 +53,7 @@ a {
 
 .Box {
   width: 1068px;
-  height: 394px;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -64,7 +63,6 @@ a {
 
 .dateitems {
   width: 190px;
-  height: auto;
   padding-right: 10px;
   text-align: right;
   line-height: 1em;
@@ -89,7 +87,7 @@ a {
 
 .vertline {
   width: 56px;
-  height: 100%;
+  height: auto;
   float: left;
   position: relative; /* for absolutely positioned child */
   margin: 0 auto;
@@ -98,6 +96,8 @@ a {
 .vertline:before {
   content: "";
   position: absolute;
+  height: 395px;
+  z-index: -1;
   top: 0;
   bottom: 0;
   left: 23px;
@@ -105,24 +105,46 @@ a {
   background-color: rgb(183, 220, 246);
 }
 
-.main {
+.mainA {
   max-width: 783px;
   max-height: 379px;
   margin-left: 28px;
   margin-top: 8px;
+  margin-bottom: 8px;
   float: left;
+  background: rgb(125, 192, 235);
+  border-radius: 5px;
+
+}
+
+.mainA :hover {
+  text-decoration: none;
+  color: black;
+  transition: .5s;
+  background: rgb(77, 150, 200);
+  border-radius: 5px;
+}
+
+.mainB {
+  max-width: 783px;
+  max-height: 379px;
+  margin-left: 28px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  float: left;
+  background-color: rgb(77, 150, 200);
+  border-radius: 5px;
+}
+
+.mainB :hover {
+  text-decoration: none;
+  color: #666;
+  transition: .5s;
+  background: rgb(125, 192, 235);
+  border-radius: 5px;
 }
 
 .content {
   padding: 25px 38px 38px;
   line-height: 1.43em;
-  background-color: rgb(125, 192, 235);
-  border-radius: 5px;
-}
-
-.content2 {
-  padding: 25px 38px 38px;
-  line-height: 1.43em;
-  background-color: rgb(77, 150, 200);
-  border-radius: 5px;
 }
